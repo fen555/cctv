@@ -154,6 +154,12 @@
 					<input type="radio"  value="60" ng-model="width"> 60
 					<input type="radio"  value="90" ng-model="width"> 90 -->
 				</form>
+				<form ng-submit="setplace(place)">
+					<input type="radio"  name="place" value="Corridor" ng-model="place" checked> Corridor
+					<input type="radio"  name="place" value="office" ng-model="place"> office
+					<input type="submit">
+				</form>
+				<img src="{{office}}">
 			</div>
 		</div>
 
@@ -191,6 +197,12 @@
 				<input type="radio"  value="60" ng-model="width"> 60
 				<input type="radio"  value="90" ng-model="width"> 90 -->
 			</form>
+			<form ng-submit="setplace(place)">
+				<input type="radio"  name="place" value="Corridor" ng-model="place" checked> Corridor
+				<input type="radio"  name="place" value="office" ng-model="place"> office
+				<input type="submit">
+			</form>
+			<img src="{{office}}">
 		</div>
 	</div>
 
