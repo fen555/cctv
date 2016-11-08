@@ -74,9 +74,9 @@ angular.module('todoApp', ['base64'])
             position: 'absolute',
             'border-style': 'dashed',
             width: '50px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d18.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -91,9 +91,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '67px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d28.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -108,9 +108,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '80px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d33.4.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -125,9 +125,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '102px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d48.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -145,9 +145,9 @@ angular.module('todoApp', ['base64'])
             'border-style': 'dashed',
             position: 'absolute',
             width: '207px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d150.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -162,9 +162,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '147px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d70.6.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -179,9 +179,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '166px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/d80.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -189,8 +189,6 @@ angular.module('todoApp', ['base64'])
         $scope.raduisStyle.push(cctvStyle80)
       }
     }
-
-
 
     // box
     $scope.raduis_box = function (size) {
@@ -204,9 +202,9 @@ angular.module('todoApp', ['base64'])
             position: 'absolute',
             'border-style': 'dashed',
             width: '50px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box18.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -221,9 +219,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '67px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box28.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -238,9 +236,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '80px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box33.4.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -255,9 +253,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '102px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box48.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -275,9 +273,9 @@ angular.module('todoApp', ['base64'])
             'border-style': 'dashed',
             position: 'absolute',
             width: '207px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box150.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -292,9 +290,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '147px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box70.6.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -309,9 +307,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '166px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/box80.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -319,8 +317,6 @@ angular.module('todoApp', ['base64'])
         $scope.raduisStyle.push(cctvStyle80)
       }
     }
-
-
     // bullet
     $scope.raduis_bullet = function (size) {
       if (size === 18) {
@@ -333,9 +329,9 @@ angular.module('todoApp', ['base64'])
             position: 'absolute',
             'border-style': 'dashed',
             width: '50px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b18.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -350,9 +346,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '67px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b28.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -367,9 +363,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '80px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b33.4.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -384,9 +380,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '102px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b48.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -404,9 +400,9 @@ angular.module('todoApp', ['base64'])
             'border-style': 'dashed',
             position: 'absolute',
             width: '207px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b150.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -421,9 +417,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '147px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b70.6.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -438,9 +434,9 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             width: '166px',
-            height: '150px',
+            height: 'fit-content',
             'background-image': `url('./img/b80.png')`,
-            'background-repeat': 'repeat-y, repeat-x',
+            'background-repeat': 'no-repeat',
             'transform': 'rotate(0deg)',
             opacity: '0.6'
           }
@@ -459,7 +455,11 @@ angular.module('todoApp', ['base64'])
     }
     $scope.initraduisStyle = function () {
       $scope.raduisStyle[$scope.idCctv].css.transform = 'rotate(' + $scope.range + 'deg)'
-      // $scope.raduisStyle[$scope.idCctv].css.width = $scope.width + 'px'
+      // console.log($scope.width)
+      if ($scope.width) {
+        $scope.raduisStyle[$scope.idCctv].css.width = $scope.width + 'px'
+        $scope.raduisStyle[$scope.idCctv].css['background-size'] = $scope.width + 'px auto'
+      }
       // $scope.raduisStyle[$scope.idCctv].css.height = $scope.raduisStyle[$scope.idCctv].css.width.replace(/(\d * )(px) /g, '$1') /2 + 'px'
       $scope.raduisStyle.forEach(function (item, index) {
         $('#' + item.id).draggable()
@@ -478,7 +478,7 @@ angular.module('todoApp', ['base64'])
       $scope.range = 0
       $scope.changeImg(index)
       $scope.changeSize(index)
-
+      $scope.width = +$scope.raduisStyle[index].css.width.replace('px', '')
       // $scope.raduisStyle[index].css.width = $scope.width + 'px'
       // var index = $scope.raduisStyle.findIndex(item => item.id === id)
       // var width = $scope.raduisStyle[index].css.width.replace(/(\d*)(px)/g, '$1')
@@ -536,8 +536,7 @@ angular.module('todoApp', ['base64'])
       console.log(place)
       if (place === 'Corridor') {
         // $scope.corridor = './img/w2.8.png'
-      }
-      else if (place === 'office') {
+      } else if (place === 'office') {
         $scope.office = './img/w2.8.png'
       }
     }
