@@ -39,7 +39,7 @@ angular.module('todoApp', ['base64'])
           width: '1em',
           height: '1em',
           animation: 'ripple 0.7s linear infinite',
-          'border-radius': '50%'
+          // 'border-radius': '50%'
         }
       }
       $scope.cameraStyle.push(cameraStyle)
@@ -201,6 +201,8 @@ angular.module('todoApp', ['base64'])
             left: 300,
             position: 'absolute',
             // 'border-style': 'dashed',
+
+
             width: '50px',
             height: 'fit-content',
             'background-image': `url('./img/box18.png')`,
@@ -520,8 +522,8 @@ angular.module('todoApp', ['base64'])
     $scope.Bullet = function () {
       console.log('Bullet')
       $scope.page = 'Bullet'
-      $scope.raduis(150)
-      $scope.office = './img/w2.8.png'
+      // $scope.raduis(150)
+      // $scope.office = './img/w2.8.png'
     }
     $scope.Box = function () {
       $scope.page = 'Box'
@@ -535,7 +537,7 @@ angular.module('todoApp', ['base64'])
     $scope.setplace = function (place) {
       console.log(place)
       if (place === 'Corridor') {
-        // $scope.corridor = './img/w2.8.png'
+        $scope.office = './img/c.png'
       } else if (place === 'office') {
         $scope.office = './img/w2.8.png'
       }
