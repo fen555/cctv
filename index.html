@@ -69,8 +69,8 @@
 					{{ initraduisStyle() }}
 					<div style="padding-top: 79%;padding-left: 24%;" >
 					<!-- <div style="padding-top: 79%;padding-left: 24%;" ng-click="tranformcctv(item1.id)"> -->
-						<button ng-click="tranformcctv(item1.id)">{{ item1.id }}</button>
-						<button ng-click="delcctv(item1.id)">del</button>
+						<button ng-click="tranformcctv(item1.id, $index)">{{ item1.id }}</button>
+						<button ng-click="delcctv(item1.id, $index)">del</button>
 					</div>
 				</div>
 		    <img src="{{ data.b64 }}" width="1024" height="768">

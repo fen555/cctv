@@ -200,9 +200,6 @@ angular.module('todoApp', ['base64'])
             top: 100,
             left: 300,
             position: 'absolute',
-            // 'border-style': 'dashed',
-
-
             width: '50px',
             height: 'fit-content',
             'background-image': `url('./img/box18.png')`,
@@ -473,8 +470,8 @@ angular.module('todoApp', ['base64'])
     // $scope.width = 0
     $scope.showRange = false
     $scope.idCctv = 0
-    $scope.tranformcctv = function (id) {
-      var index = $scope.raduisStyle.findIndex(item => item.id === id)
+    $scope.tranformcctv = function (id, index) {
+      console.log(index)
       $scope.idCctv = index
       $scope.showRange = true
       $scope.range = 0
@@ -513,9 +510,11 @@ angular.module('todoApp', ['base64'])
       if ($scope.raduisStyle[id].type === 'b33.4') $scope.office = './img/w8.png'
       if ($scope.raduisStyle[id].type === 'b28') $scope.office = './img/w12.png'
     }
-    $scope.delcctv = function (id) {
-      var index = $scope.raduisStyle.findIndex(item => item.id === id)
+    $scope.delcctv = function (id, index) {
+      console.log(index)
+      // var index = $scope.raduisStyle.findIndex(item => item.id === id)
       $scope.raduisStyle.splice(index, 1)
+      $scope.idCctv = 0
       console.log($scope.raduisStyle)
     }
     $scope.page = ''
