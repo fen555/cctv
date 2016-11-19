@@ -62,11 +62,11 @@
 		  </div>
 		</nav>
 
-
+		<h3>Dome : {{domeStyle}} Box : {{ boxStyle }} Bullet : {{ bulletStyle }}</h3>
 		<div class="columns" ng-show="pagetitle === 'active'">
 		  <div class="column is-three-quarters">
 				<div  style="display: inline-block" id="{{item1.id}}" ng-repeat="item1 in raduisStyle" ng-mouseup="moveObjraduisStyle(item1.id)" ng-init="">
-					{{ initraduisStyle() }}
+					{{ initraduisStyle();countStyle() }}
 					<div style="padding-top: 79%;padding-left: 24%;" >
 					<!-- <div style="padding-top: 79%;padding-left: 24%;" ng-click="tranformcctv(item1.id)"> -->
 						<button ng-click="tranformcctv(item1.id, $index)">{{ item1.id }}</button>

@@ -68,6 +68,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle18 = {
           id: Date.now(),
           type: 'b18',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -86,6 +87,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle28 = {
           id: Date.now(),
           type: 'b28',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -103,6 +105,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle33 = {
           id: Date.now(),
           type: 'b33.4',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -120,6 +123,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle48 = {
           id: Date.now(),
           type: 'b48',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -137,6 +141,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle150 = {
           id: Date.now(),
           type: 'b150',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -157,6 +162,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle70 = {
           id: Date.now(),
           type: 'b70.6',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -174,6 +180,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle80 = {
           id: Date.now(),
           type: 'b0',
+          style: 'dome',
           css: {
             top: 100,
             left: 300,
@@ -196,6 +203,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle18 = {
           id: Date.now(),
           type: 'b18',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -213,6 +221,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle28 = {
           id: Date.now(),
           type: 'b28',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -230,6 +239,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle33 = {
           id: Date.now(),
           type: 'b33.4',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -247,6 +257,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle48 = {
           id: Date.now(),
           type: 'b48',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -264,6 +275,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle150 = {
           id: Date.now(),
           type: 'b150',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -284,6 +296,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle70 = {
           id: Date.now(),
           type: 'b70.6',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -301,6 +314,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle80 = {
           id: Date.now(),
           type: 'b0',
+          style: 'box',
           css: {
             top: 100,
             left: 300,
@@ -322,6 +336,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle18 = {
           id: Date.now(),
           type: 'b18',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -340,6 +355,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle28 = {
           id: Date.now(),
           type: 'b28',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -357,6 +373,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle33 = {
           id: Date.now(),
           type: 'b33.4',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -374,6 +391,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle48 = {
           id: Date.now(),
           type: 'b48',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -391,6 +409,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle150 = {
           id: Date.now(),
           type: 'b150',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -411,6 +430,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle70 = {
           id: Date.now(),
           type: 'b70.6',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -428,6 +448,7 @@ angular.module('todoApp', ['base64'])
         var cctvStyle80 = {
           id: Date.now(),
           type: 'b0',
+          style: 'bullet',
           css: {
             top: 100,
             left: 300,
@@ -505,6 +526,14 @@ angular.module('todoApp', ['base64'])
       // arrheight.join().split(',')
       // console.log(arrwidth, arrheight)
     }
+    $scope.domeStyle = 0
+    $scope.boxStyle = 0
+    $scope.bulletStyle = 0
+    $scope.countStyle = function () {
+      $scope.boxStyle = $scope.raduisStyle.filter(function (item) { return item.style === 'box' }).length
+      $scope.domeStyle = $scope.raduisStyle.filter(function (item) { return item.style === 'dome' }).length
+      $scope.bulletStyle = $scope.raduisStyle.filter(function (item) { return item.style === 'bullet' }).length
+    }
     $scope.changeImg = function (id) {
       console.log($scope.raduisStyle[id])
       if ($scope.raduisStyle[id].type === 'b150') {
@@ -541,6 +570,7 @@ angular.module('todoApp', ['base64'])
       $scope.del = true
       // var index = $scope.raduisStyle.findIndex(item => item.id === id)
       $scope.raduisStyle.splice(index, 1)
+      $scope.countStyle()
       // if ($scope.raduisStyle.length === 0) {
       //   $scope.idCctv = 0
       // } else {
