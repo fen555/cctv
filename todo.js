@@ -453,11 +453,13 @@ angular.module('todoApp', ['base64'])
       })
     }
     $scope.initraduisStyle = function () {
-      $scope.raduisStyle[$scope.idCctv].css.transform = 'rotate(' + $scope.range + 'deg)'
-      // console.log($scope.width)
-      if ($scope.width) {
-        $scope.raduisStyle[$scope.idCctv].css.width = $scope.width + 'px'
-        $scope.raduisStyle[$scope.idCctv].css['background-size'] = $scope.width + 'px auto'
+      if (!$scope.del) {
+        $scope.raduisStyle[$scope.idCctv].css.transform = 'rotate(' + $scope.range + 'deg)'
+        // console.log($scope.width)
+        if ($scope.width) {
+          $scope.raduisStyle[$scope.idCctv].css.width = $scope.width + 'px'
+          $scope.raduisStyle[$scope.idCctv].css['background-size'] = $scope.width + 'px'
+        }
       }
       // $scope.raduisStyle[$scope.idCctv].css.height = $scope.raduisStyle[$scope.idCctv].css.width.replace(/(\d * )(px) /g, '$1') /2 + 'px'
       $scope.raduisStyle.forEach(function (item, index) {
@@ -468,6 +470,7 @@ angular.module('todoApp', ['base64'])
     }
     // $scope.range = 0
     // $scope.width = 0
+    $scope.del = false
     $scope.showRange = false
     $scope.idCctv = 0
     $scope.tranformcctv = function (id, index) {
@@ -477,7 +480,9 @@ angular.module('todoApp', ['base64'])
       $scope.range = 0
       $scope.changeImg(index)
       $scope.changeSize(index)
-      $scope.width = +$scope.raduisStyle[index].css.width.replace('px', '')
+      $scope.del = false
+      $scope.width = $scope.raduisStyle[index].css.width.split('px')[0]
+      // $scope.width = +$scope.raduisStyle[index].css.width.replace('px', '')
       // $scope.raduisStyle[index].css.width = $scope.width + 'px'
       // var index = $scope.raduisStyle.findIndex(item => item.id === id)
       // var width = $scope.raduisStyle[index].css.width.replace(/(\d*)(px)/g, '$1')
@@ -511,11 +516,17 @@ angular.module('todoApp', ['base64'])
       if ($scope.raduisStyle[id].type === 'b28') $scope.office = './img/w12.png'
     }
     $scope.delcctv = function (id, index) {
-      console.log(index)
+      console.log(index, id)
+      $scope.del = true
       // var index = $scope.raduisStyle.findIndex(item => item.id === id)
       $scope.raduisStyle.splice(index, 1)
-      $scope.idCctv = 0
-      console.log($scope.raduisStyle)
+      // if ($scope.raduisStyle.length === 0) {
+      //   $scope.idCctv = 0
+      // } else {
+      //   $scope.idCctv = $scope.raduisStyle.length - 1
+      //   $scope.width = $scope.raduisStyle[$scope.idCctv].css.width
+      //   $scope.range = $scope.raduisStyle[$scope.idCctv].css.range
+      // }
     }
     $scope.page = ''
     $scope.Bullet = function () {
