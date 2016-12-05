@@ -559,7 +559,7 @@ angular.module('todoApp', ['base64'])
       if ($scope.raduisStyle[id].type === 'b48') {
         $scope.office = './img/w6.png'
         $scope.off = './img/w6.png'
-        $scope.cor = './img/c48.png'
+        $scope.cor = './img/c6.png'
       }
       if ($scope.raduisStyle[id].type === 'b33.4') {
         $scope.office = './img/w8.png'
