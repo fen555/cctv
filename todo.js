@@ -503,28 +503,8 @@ angular.module('todoApp', ['base64'])
       $scope.changeSize(index)
       $scope.del = false
       $scope.width = $scope.raduisStyle[index].css.width.split('px')[0]
-      // $scope.width = +$scope.raduisStyle[index].css.width.replace('px', '')
-      // $scope.raduisStyle[index].css.width = $scope.width + 'px'
-      // var index = $scope.raduisStyle.findIndex(item => item.id === id)
-      // var width = $scope.raduisStyle[index].css.width.replace(/(\d*)(px)/g, '$1')
-      // var rotate = $scope.raduisStyle[$scope.idCctv].css.transform = 'rotate(' + $scope.range + 'deg)'
-      // console.log(rotate)
-      // $scope.range = rotate
-      // $scope.width = width
-      // $scope.idCctv = index
     }
     $scope.changeSize = function (index) {
-      // var width = $scope.raduisStyle[index].css.width
-      // var height = $scope.raduisStyle[index].css.height
-      // var arrwidth = width.split('')
-      // var arrheight = height.split('')
-      // arrwidth.pop()
-      // arrwidth.pop()
-      // arrheight.pop()
-      // arrheight.pop()
-      // arrwidth.join()
-      // arrheight.join().split(',')
-      // console.log(arrwidth, arrheight)
     }
     $scope.domeStyle = 0
     $scope.boxStyle = 0
@@ -578,13 +558,6 @@ angular.module('todoApp', ['base64'])
       // var index = $scope.raduisStyle.findIndex(item => item.id === id)
       $scope.raduisStyle.splice(index, 1)
       $scope.countStyle()
-      // if ($scope.raduisStyle.length === 0) {
-      //   $scope.idCctv = 0
-      // } else {
-      //   $scope.idCctv = $scope.raduisStyle.length - 1
-      //   $scope.width = $scope.raduisStyle[$scope.idCctv].css.width
-      //   $scope.range = $scope.raduisStyle[$scope.idCctv].css.range
-      // }
     }
     $scope.page = ''
     $scope.Bullet = function () {
