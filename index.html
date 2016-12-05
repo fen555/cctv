@@ -60,7 +60,10 @@
 				<div  style="display: inline-block" id="{{item1.id}}" ng-repeat="item1 in raduisStyle" ng-mouseup="moveObjraduisStyle(item1.id)" ng-init="">
 					{{ initraduisStyle();countStyle() }}
 					<div style="padding-top: 79%;padding-left: 24%;" >
-						<button ng-click="tranformcctv(item1.id, $index)">{{ item1.id }}</button>
+					<!-- <div style="padding-top: 79%;padding-left: 24%;" ng-click="tranformcctv(item1.id, $index)"> -->
+						<!-- <button ng-click="tranformcctv(item1.id, $index)">{{ item1.id }}</button> -->
+						<button ng-click="tranformcctv(item1.id, $index)">Detail</button>
+
 						<button ng-click="delcctv(item1.id, $index)">del</button>
 					</div>
 				</div>
@@ -94,10 +97,12 @@
 				<hr>
 				<div ng-show="showRange">
 					<br>
+					<button ng-click="showRange=false" type="submit">X</button>
 					raduis cctv {{idCctv}}
 					<form ng-submit="cctvSubmit()">
-						<input type="range" min="0" max="360" ng-model="range"> {{ range }} <button ng-click="showRange=false" type="submit">X</button>
-						<input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
+
+						Transform : <input type="range" min="0" max="360" ng-model="range"> {{ range }} <br>
+						Size : <input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
 					</form>
 					<form ng-submit="setplace(place)">
 						<input type="radio"  name="place" value="Corridor" ng-model="place" checked> Corridor
@@ -135,10 +140,11 @@
 			<hr>
 			<div ng-show="showRange">
 				<br>
+				<button ng-click="showRange=false" type="submit">X</button>
 				raduis cctv {{idCctv}}
 				<form ng-submit="cctvSubmit()">
-					<input type="range" min="0" max="360" ng-model="range"> {{ range }} <button ng-click="showRange=false" type="submit">X</button>
-					<input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
+					Transform : <input type="range" min="0" max="360" ng-model="range"> {{ range }}  <br>
+					Size : <input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
 				</form>
 				<form ng-submit="setplace(place)">
 					<input type="radio"  name="place" value="Corridor" ng-model="place" checked> Corridor
@@ -175,10 +181,11 @@
 		<hr>
 		<div ng-show="showRange">
 			<br>
+			<button ng-click="showRange=false" type="submit">X</button>
 			raduis cctv {{idCctv}}
 			<form ng-submit="cctvSubmit()">
-				<input type="range" min="0" max="360" ng-model="range"> {{ range }} <button ng-click="showRange=false" type="submit">X</button>
-				<input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
+				Transform : <input type="range" min="0" max="360" ng-model="range"> {{ range }} <br>
+				Size : <input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
 			</form>
 			<form ng-submit="setplace(place)">
 				<input type="radio"  name="place" value="Corridor" ng-model="place" > Corridor
