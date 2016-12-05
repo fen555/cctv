@@ -194,15 +194,13 @@
 			<form ng-submit="cctvSubmit()">
 				<input type="range" min="0" max="360" ng-model="range"> {{ range }} <button ng-click="showRange=false" type="submit">X</button>
 				<input type="range" min="0" max="500" ng-model="width"> {{ width }} <br>
-				<!-- <input type="radio"  value="30" ng-model="width"> 30
-				<input type="radio"  value="60" ng-model="width"> 60
-				<input type="radio"  value="90" ng-model="width"> 90 -->
 			</form>
 			<form ng-submit="setplace(place)">
-				<input type="radio"  name="place" value="Corridor" ng-model="place" checked> Corridor
-				<input type="radio"  name="place" value="office" ng-model="place"> office
+				<input type="radio"  name="place" value="Corridor" ng-model="place" > Corridor
+				<input type="radio"  name="place" value="office" ng-model="place" checked> office
 				<input type="submit">
 			</form>
+			<!-- {{office}} -->
 			<img src="{{office}}">
 		</div>
 	</div>

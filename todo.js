@@ -539,30 +539,37 @@ angular.module('todoApp', ['base64'])
       if ($scope.raduisStyle[id].type === 'b150') {
         $scope.office = './img/w2.8.png'
         $scope.off = './img/w2.8.png'
+        $scope.cor = './img/c2.8.png'
       }
       if ($scope.raduisStyle[id].type === 'b18') {
         $scope.office = './img/w16.png'
         $scope.off = './img/w16.png'
+        $scope.cor = './img/c16.png'
       }
       if ($scope.raduisStyle[id].type === 'b80') {
         $scope.office = './img/w3.6.png'
         $scope.off = './img/w3.6.png'
+        $scope.cor = './img/c3.6.png'
       }
       if ($scope.raduisStyle[id].type === 'b70.6') {
         $scope.office = './img/w4.png'
         $scope.off = './img/w4.png'
+        $scope.cor = './img/c4.png'
       }
       if ($scope.raduisStyle[id].type === 'b48') {
         $scope.office = './img/w6.png'
         $scope.off = './img/w6.png'
+        $scope.cor = './img/c48.png'
       }
       if ($scope.raduisStyle[id].type === 'b33.4') {
         $scope.office = './img/w8.png'
         $scope.off = './img/w8.png'
+        $scope.cor = './img/c8.png'
       }
       if ($scope.raduisStyle[id].type === 'b28') {
         $scope.office = './img/w12.png'
         $scope.off = './img/w12.png'
+        $scope.cor = './img/c12.png'
       }
     }
     $scope.delcctv = function (id, index) {
@@ -598,7 +605,8 @@ angular.module('todoApp', ['base64'])
     $scope.setplace = function (place) {
       console.log(place)
       if (place === 'Corridor') {
-        $scope.office = './img/c.png'
+        // $scope.office = './img/c.png'
+        $scope.office = $scope.cor
       } else if (place === 'office') {
         $scope.office = $scope.off
       }
